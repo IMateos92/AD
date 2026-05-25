@@ -1,0 +1,32 @@
+site_name: AD Application
+site_description: Documentación de la aplicación AD
+site_author: IMateos92
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: es
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+
+plugins:
+  - search
+
+nav:
+  - Inicio: index.md
+  - Guía de instalación: installation.md
+  - Uso: usage.md
+  - API: api.md
+  - Contribuir: contributing.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - tables
+  - toc:
+      toc_depth: 3
